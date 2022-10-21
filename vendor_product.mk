@@ -26,7 +26,7 @@ else
 endif
 
 # QDSS uses SW path on these targets
-ifneq ($(filter lahaina taro parrot neo anorak ravelin bengal kalama monaco kona crow trinket,$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter lahaina taro parrot neo anorak ravelin bengal kalama pineapple monaco kona crow trinket,$(TARGET_BOARD_PLATFORM)),)
   PRODUCT_PROPERTY_OVERRIDES += vendor.usb.qdss.inst.name=qdss_sw
 else
   PRODUCT_PROPERTY_OVERRIDES += vendor.usb.qdss.inst.name=qdss
